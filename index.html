@@ -3,85 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="img/img_avatar_m.png" alt="Profile Photo" class="profile-photo">
-            <div class="profile-text">
-                <h1>[Your Name]</h1>
-                <p class="tagline">[Your Tagline Here]</p>
+    <div class="grain-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <span class="logo-initial">P</span>
+                <span class="logo-text">Portfolio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="pages/projects.html" class="nav-link">Projects</a></li>
+                <li><a href="pages/about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Creative</span>
+                    <span class="title-line">Professional</span>
+                </h1>
+                <p class="hero-subtitle">Designer • Developer • Problem Solver</p>
+                <div class="hero-cta">
+                    <a href="pages/projects.html" class="btn-primary">View Work</a>
+                    <a href="pages/about.html" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-shape shape-1"></div>
+                <div class="visual-shape shape-2"></div>
+                <div class="visual-shape shape-3"></div>
             </div>
         </div>
-        <nav>
-            <span><a href="index.html"><i class="fas fa-home"></i> Home</a></span> | 
-            <span><a href="pages/about.html"><i class="fas fa-user"></i> About</a></span> | 
-            <span><a href="pages/projects.html"><i class="fas fa-folder-open"></i> Projects</a></span>
-        </nav>
-    </header>
+    </section>
 
-    <main>
-        <section class="welcome">
-            <h2>Welcome to My Portfolio</h2>
-            <p>[A brief introduction about yourself. You can customize this section to reflect your personality and interests.]</p>
-        </section>
+    <!-- Work Experience Section -->
+    <section class="experience-section">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">Work Experience</h2>
+        </div>
+        
+        <div class="experience-container">
+            <!-- Experience Item 1 -->
+            <article class="experience-item">
+                <div class="experience-timeline">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <h3 class="experience-title">Senior Product Designer</h3>
+                            <p class="experience-company">Tech Innovations Inc.</p>
+                        </div>
+                        <span class="experience-date">2022 - Present</span>
+                    </div>
+                    <ul class="experience-description">
+                        <li>Led design initiatives for flagship product, increasing user engagement by 45%</li>
+                        <li>Managed cross-functional team of 8 designers and developers</li>
+                        <li>Established design system used across 12+ product teams</li>
+                        <li>Conducted user research and usability testing with 200+ participants</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">Team Leadership</span>
+                        <span class="tag">Design Systems</span>
+                    </div>
+                </div>
+            </article>
 
-        <section class="featured-projects">
-            <h2>Featured Projects</h2>
-            <article class="featured-project">
-                <h3>[Project Title 1]</h3>
-                <p>[Brief description of your project and its impact]</p>
-                <p class="tech-stack"><strong>Tech:</strong> [Technologies used]</p>
+            <!-- Experience Item 2 -->
+            <article class="experience-item">
+                <div class="experience-timeline">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <h3 class="experience-title">Product Designer</h3>
+                            <p class="experience-company">Digital Studios</p>
+                        </div>
+                        <span class="experience-date">2020 - 2022</span>
+                    </div>
+                    <ul class="experience-description">
+                        <li>Designed and shipped 15+ features for mobile and web applications</li>
+                        <li>Collaborated with product managers to define product roadmaps</li>
+                        <li>Created interactive prototypes and conducted A/B testing</li>
+                        <li>Improved conversion rates by 32% through design optimization</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">Product Design</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">A/B Testing</span>
+                    </div>
+                </div>
             </article>
-            <article class="featured-project">
-                <h3>[Project Title 2]</h3>
-                <p>[Brief description of your project and its impact]</p>
-                <p class="tech-stack"><strong>Tech:</strong> [Technologies used]</p>
-            </article>
-            <article class="featured-project">
-                <h3>[Project Title 3]</h3>
-                <p>[Brief description of your project and its impact]</p>
-                <p class="tech-stack"><strong>Tech:</strong> [Technologies used]</p>
-            </article>
-            <article class="featured-project">
-                <h3>More Projects</h3>
-                <p>Learn more about my other projects and contributions.</p>
-                <a href="pages/projects.html" class="btn"><button>View All Projects</button></a>
-            </article>
-            
-        </section>
 
-        <section class="skills-snapshot">
-            <h2>Technical Skills</h2>
-            <p>[A brief paragraph about your area of expertise within the technology field]</p>
-            <div class="skills-list">
-                <span class="skill-item"><i class="fa-brands fa-python"></i> [Skill 1]</span>
-                <span class="skill-item"><i class="fa-brands fa-js"></i> [Skill 2]</span>
-                <span class="skill-item"><i class="fa-brands fa-java"></i> [Skill 3]</span>
-                <span class="skill-item"><i class="fa-solid fa-c"></i> [Skill 4]</span>
-                <span class="skill-item"><i class="fa-brands fa-aws"></i> [Skill 5]</span>
-                <span class="skill-item"><i class="fa-brands fa-node-js"></i> [Skill 6]</span>
-                <span class="skill-item"><i class="fa-brands fa-docker"></i> [Skill 7]</span>
+            <!-- Experience Item 3 -->
+            <article class="experience-item">
+                <div class="experience-timeline">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <h3 class="experience-title">Junior Designer</h3>
+                            <p class="experience-company">Creative Agency Co.</p>
+                        </div>
+                        <span class="experience-date">2018 - 2020</span>
+                    </div>
+                    <ul class="experience-description">
+                        <li>Supported senior designers on client projects across various industries</li>
+                        <li>Created marketing materials, brand guidelines, and digital assets</li>
+                        <li>Participated in client meetings and presented design concepts</li>
+                        <li>Managed multiple projects simultaneously under tight deadlines</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">Brand Design</span>
+                        <span class="tag">Marketing</span>
+                        <span class="tag">Client Relations</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Experience Item 4 -->
+            <article class="experience-item">
+                <div class="experience-timeline">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <h3 class="experience-title">Design Intern</h3>
+                            <p class="experience-company">Startup Ventures</p>
+                        </div>
+                        <span class="experience-date">2017 - 2018</span>
+                    </div>
+                    <ul class="experience-description">
+                        <li>Assisted in wireframing and mockup creation for web applications</li>
+                        <li>Conducted competitive analysis and market research</li>
+                        <li>Contributed to the development of the company's visual identity</li>
+                        <li>Learned industry-standard design tools and methodologies</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">Wireframing</span>
+                        <span class="tag">Research</span>
+                        <span class="tag">Visual Design</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">Core Skills</h2>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3 class="skill-title">Design</h3>
+                <p class="skill-description">UI/UX, Brand Identity, Design Systems, Visual Design</p>
             </div>
-            <p><a href="pages/about.html#skills-tech"><button>Learn more about my technical background</button></a></p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="contact">
-            <h3>Contact Me</h3>
-            <div class="social-icons">
-                <a class="unstyled-link" href="https://github.com/[yourusername]" target="_blank">GitHub</a> | 
-                <a class="unstyled-link" href="https://linkedin.com/in/[yourusername]" target="_blank">LinkedIn</a> | 
-                <a class="unstyled-link" href="mailto:your.email@example.com">[your.email@example.com]</a>
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3 class="skill-title">Development</h3>
+                <p class="skill-description">HTML, CSS, JavaScript, React, Responsive Design</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔍</div>
+                <h3 class="skill-title">Research</h3>
+                <p class="skill-description">User Testing, Analytics, Competitive Analysis, Strategy</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🤝</div>
+                <h3 class="skill-title">Collaboration</h3>
+                <p class="skill-description">Team Leadership, Client Relations, Cross-functional Work</p>
             </div>
         </div>
-        <hr class="footer-divider">
-        <p>&copy; 20[xx] [Your Name]. All rights reserved.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Portfolio. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:contact@portfolio.com">Email</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="css/animations.js"></script>
 </body>
 </html>

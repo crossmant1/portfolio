@@ -3,159 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] - About</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Portfolio - About</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="../img/img_avatar_m.png" alt="Profile Photo" class="profile-photo">
-            <div class="profile-text">
-                <h1>[Your Name] - About</h1>
-                <p class="tagline">[Your Tagline Here]</p>
-            </div>
+    <div class="grain-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-initial">P</span>
+                <span class="logo-text">Portfolio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+            </ul>
         </div>
-        <nav>
-            <span><a href="../index.html"><i class="fas fa-home"></i> Home</a></span> | 
-            <span><a href="about.html"><i class="fas fa-user"></i> About</a></span> | 
-            <span><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></span>
-        </nav>
-    </header>
+    </nav>
 
-    <main>
-        <section class="about-me">
-            <h1>About Me</h1>
-            <h2>Hello! I'm [Your Name],</h2>
-            <p>[Here is a brief introduction about myself.]</p>
-        </section>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1 class="page-title">About Me</h1>
+            <p class="page-subtitle">Designer, developer, and creative problem solver passionate about crafting exceptional digital experiences</p>
+        </div>
+    </section>
 
-        <section class="work-history">
-            <h2><i class="fa-solid fa-briefcase"></i> Work History</h2>
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">[Job Title]</h3>
-                    <p class="card-date">[Year] - [Year]</p>
-                    <p class="card-company">[Company Name]</p>
-                </div>
-                <div class="card-description">
-                    <p>[Description of your role and responsibilities.]</p>
-                    <ul>
-                        <li>[Achievement or responsibility 1]</li>
-                        <li>[Achievement or responsibility 2]</li>
-                    </ul>
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="image-container">
+                    <div class="placeholder-avatar"></div>
+                    <div class="image-decoration decoration-1"></div>
+                    <div class="image-decoration decoration-2"></div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">[Job Title]</h3>
-                    <p class="card-date">[Year] - [Year]</p>
-                    <p class="card-company">[Company Name]</p>
-                </div>
-                <div class="card-description">
-                    <p>[Description of your role and responsibilities.]</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="education">
-            <h2><i class="fa-solid fa-school"></i> Education</h2>
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">[Degree] in [Field of Study]</h3>
-                    <p class="card-date">[Year] - [Year]</p>
-                    <p class="card-company">[University Name]</p>
-                </div>
-                <div class="card-description">
-                    <p>[Additional information about your studies, achievements, etc.]</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">[Certificate Name]</h3>
-                    <p class="card-date">[Year] - [Expiration Year]</p>
-                    <p class="card-company">[Issuing Organization]</p>
-                </div>
-                <div class="card-description">
-                    <p>[Additional information about your expertise, related skills or the certificate.]</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills">
-            <h2 id="skills-tech"><i class="fa-solid fa-code"></i> Skills & Technologies</h2>
             
-            <div class="skill-category">
-                <div class="skill-category-header">
-                    <i class="fa-solid fa-code"></i> Programming Languages
+            <div class="about-content">
+                <h2 class="about-title">Hello, I'm a Creative Professional</h2>
+                <div class="about-text">
+                    <p>With over 8 years of experience in design and development, I specialize in creating digital experiences that are both beautiful and functional. My approach combines user-centered design principles with technical expertise to deliver solutions that truly resonate with users.</p>
+                    
+                    <p>I believe that great design is not just about aesthetics—it's about solving real problems and creating meaningful connections between people and technology. Every project is an opportunity to learn, grow, and push the boundaries of what's possible.</p>
+                    
+                    <p>When I'm not designing or coding, you can find me exploring new design trends, contributing to open-source projects, or sharing knowledge with the design community through workshops and mentorship.</p>
                 </div>
-                <div class="skill-list">
-                    <span class="skill-item"><i class="fa-brands fa-python"></i> Python</span>
-                    <span class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</span>
-                    <span class="skill-item"><i class="fa-brands fa-java"></i> Java</span>
-                    <span class="skill-item"><i class="fa-solid fa-c"></i> C/C++</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-category-header">
-                    <i class="fa-solid fa-laptop-code"></i> Web Development
-                </div>
-                <div class="skill-list">
-                    <span class="skill-item"><i class="fa-brands fa-html5"></i> HTML</span>
-                    <span class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                    <span class="skill-item"><i class="fa-brands fa-react"></i> React</span>
-                    <span class="skill-item"><i class="fa-brands fa-node-js"></i> Node.js</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-category-header">
-                    <i class="fa-solid fa-cloud"></i> Cloud & DevOps
-                </div>
-                <div class="skill-list">
-                    <span class="skill-item"><i class="fa-brands fa-aws"></i> AWS</span>
-                    <span class="skill-item"><i class="fa-brands fa-docker"></i> Docker</span>
-                    <span class="skill-item"><i class="fa-solid fa-infinity"></i> CI/CD</span>
-                    <span class="skill-item"><i class="fa-brands fa-github"></i> GitHub Actions</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-category-header">
-                    <i class="fa-solid fa-database"></i> Databases
-                </div>
-                <div class="skill-list">
-                    <span class="skill-item"><i class="fa-solid fa-database"></i> MySQL</span>
-                    <span class="skill-item"><i class="fa-solid fa-database"></i> PostgreSQL</span>
-                    <span class="skill-item"><i class="fa-solid fa-database"></i> MongoDB</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-category-header">
-                    <i class="fa-solid fa-pen-to-square"></i> [Skill Category]
-                </div>
-                <div class="skill-list">
-                    <span class="skill-item"><i class="fa-solid fa-plus"></i> [Skill #1]</span>
-                    <span class="skill-item"><i class="fa-solid fa-plus"></i> [Skill #2]</span>
-                    <span class="skill-item"><i class="fa-solid fa-plus"></i> [Skill #3]</span>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="contact">
-            <h3>Contact Me</h3>
-            <div class="social-icons">
-                <a class="unstyled-link" href="https://github.com/[yourusername]" target="_blank">GitHub</a> | 
-                <a class="unstyled-link" href="https://linkedin.com/in/[yourusername]" target="_blank">LinkedIn</a> | 
-                <a class="unstyled-link" href="[mailto:your.email@example.com]">[your.email@example.com]</a>
             </div>
         </div>
-        <hr class="footer-divider">
-        <p>&copy; 20[xx] [Your Name]. All rights reserved.</p>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy-section">
+        <div class="section-header">
+            <h2 class="section-title">Design Philosophy</h2>
+        </div>
+        
+        <div class="philosophy-grid">
+            <div class="philosophy-card">
+                <div class="philosophy-number">01</div>
+                <h3 class="philosophy-title">User-Centered</h3>
+                <p class="philosophy-description">Every design decision starts with understanding the user's needs, behaviors, and pain points. Empathy drives innovation.</p>
+            </div>
+            
+            <div class="philosophy-card">
+                <div class="philosophy-number">02</div>
+                <h3 class="philosophy-title">Simplicity</h3>
+                <p class="philosophy-description">Complexity is easy; simplicity is hard. The best solutions are often the most elegant and straightforward.</p>
+            </div>
+            
+            <div class="philosophy-card">
+                <div class="philosophy-number">03</div>
+                <h3 class="philosophy-title">Iteration</h3>
+                <p class="philosophy-description">Great design emerges through continuous refinement. Testing, learning, and improving is core to the creative process.</p>
+            </div>
+            
+            <div class="philosophy-card">
+                <div class="philosophy-number">04</div>
+                <h3 class="philosophy-title">Collaboration</h3>
+                <p class="philosophy-description">The best work happens when diverse perspectives come together. Open communication and teamwork unlock potential.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="section-header">
+            <h2 class="section-title">Tools & Technologies</h2>
+        </div>
+        
+        <div class="tools-grid">
+            <div class="tool-category">
+                <h3 class="tool-category-title">Design</h3>
+                <ul class="tool-list">
+                    <li>Figma</li>
+                    <li>Adobe Creative Suite</li>
+                    <li>Sketch</li>
+                    <li>Principle</li>
+                    <li>Framer</li>
+                </ul>
+            </div>
+            
+            <div class="tool-category">
+                <h3 class="tool-category-title">Development</h3>
+                <ul class="tool-list">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            
+            <div class="tool-category">
+                <h3 class="tool-category-title">Prototyping</h3>
+                <ul class="tool-list">
+                    <li>ProtoPie</li>
+                    <li>InVision</li>
+                    <li>Marvel</li>
+                    <li>Axure RP</li>
+                    <li>Adobe XD</li>
+                </ul>
+            </div>
+            
+            <div class="tool-category">
+                <h3 class="tool-category-title">Collaboration</h3>
+                <ul class="tool-list">
+                    <li>GitHub</li>
+                    <li>Jira</li>
+                    <li>Slack</li>
+                    <li>Miro</li>
+                    <li>Notion</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-content">
+            <h2 class="contact-title">Let's Connect</h2>
+            <p class="contact-description">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            
+            <div class="contact-methods">
+                <a href="mailto:contact@portfolio.com" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>contact@portfolio.com</p>
+                    </div>
+                </a>
+                
+                <a href="https://linkedin.com" target="_blank" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com" target="_blank" class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p>Check out my code</p>
+                    </div>
+                </a>
+                
+                <a href="https://twitter.com" target="_blank" class="contact-card">
+                    <div class="contact-icon">🐦</div>
+                    <div class="contact-info">
+                        <h3>Twitter</h3>
+                        <p>Follow my journey</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Portfolio. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:contact@portfolio.com">Email</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="../css/animations.js"></script>
 </body>
 </html>

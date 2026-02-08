@@ -1,200 +1,207 @@
-:root{
---accent-color-text: #fff;
---accent-color-bg: #333;
---color-tagline: #666;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grain-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-initial">P</span>
+                <span class="logo-text">Portfolio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+            </ul>
+        </div>
+    </nav>
 
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1 class="page-title">About Me</h1>
+            <p class="page-subtitle">Designer, developer, and creative problem solver passionate about crafting exceptional digital experiences</p>
+        </div>
+    </section>
 
-}
-main {
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center;
-}
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="image-container">
+                    <div class="placeholder-avatar"></div>
+                    <div class="image-decoration decoration-1"></div>
+                    <div class="image-decoration decoration-2"></div>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <h2 class="about-title">Hello, I'm a Creative Professional</h2>
+                <div class="about-text">
+                    <p>With over 8 years of experience in design and development, I specialize in creating digital experiences that are both beautiful and functional. My approach combines user-centered design principles with technical expertise to deliver solutions that truly resonate with users.</p>
+                    
+                    <p>I believe that great design is not just about aesthetics—it's about solving real problems and creating meaningful connections between people and technology. Every project is an opportunity to learn, grow, and push the boundaries of what's possible.</p>
+                    
+                    <p>When I'm not designing or coding, you can find me exploring new design trends, contributing to open-source projects, or sharing knowledge with the design community through workshops and mentorship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* Skill Item (badge-like) */
-.skill-item {
-    background-color: white;
-    color: #333;
-    padding: 8px 15px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.95em;
-    transition: all 0.3s ease;
-}
-.skill-item:hover {
-    background-color: var(--accent-color-bg);
-    color: white;
-    border-color: var(--accent-color-bg);
-    transform: translateY(-2px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.skill-item i {
-    font-size: 1.1em;
-}
+    <!-- Philosophy Section -->
+    <section class="philosophy-section">
+        <div class="section-header">
+            <h2 class="section-title">Design Philosophy</h2>
+        </div>
+        
+        <div class="philosophy-grid">
+            <div class="philosophy-card">
+                <div class="philosophy-number">01</div>
+                <h3 class="philosophy-title">User-Centered</h3>
+                <p class="philosophy-description">Every design decision starts with understanding the user's needs, behaviors, and pain points. Empathy drives innovation.</p>
+            </div>
+            
+            <div class="philosophy-card">
+                <div class="philosophy-number">02</div>
+                <h3 class="philosophy-title">Simplicity</h3>
+                <p class="philosophy-description">Complexity is easy; simplicity is hard. The best solutions are often the most elegant and straightforward.</p>
+            </div>
+            
+            <div class="philosophy-card">
+                <div class="philosophy-number">03</div>
+                <h3 class="philosophy-title">Iteration</h3>
+                <p class="philosophy-description">Great design emerges through continuous refinement. Testing, learning, and improving is core to the creative process.</p>
+            </div>
+            
+            <div class="philosophy-card">
+                <div class="philosophy-number">04</div>
+                <h3 class="philosophy-title">Collaboration</h3>
+                <p class="philosophy-description">The best work happens when diverse perspectives come together. Open communication and teamwork unlock potential.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="section-header">
+            <h2 class="section-title">Tools & Technologies</h2>
+        </div>
+        
+        <div class="tools-grid">
+            <div class="tool-category">
+                <h3 class="tool-category-title">Design</h3>
+                <ul class="tool-list">
+                    <li>Figma</li>
+                    <li>Adobe Creative Suite</li>
+                    <li>Sketch</li>
+                    <li>Principle</li>
+                    <li>Framer</li>
+                </ul>
+            </div>
+            
+            <div class="tool-category">
+                <h3 class="tool-category-title">Development</h3>
+                <ul class="tool-list">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            
+            <div class="tool-category">
+                <h3 class="tool-category-title">Prototyping</h3>
+                <ul class="tool-list">
+                    <li>ProtoPie</li>
+                    <li>InVision</li>
+                    <li>Marvel</li>
+                    <li>Axure RP</li>
+                    <li>Adobe XD</li>
+                </ul>
+            </div>
+            
+            <div class="tool-category">
+                <h3 class="tool-category-title">Collaboration</h3>
+                <ul class="tool-list">
+                    <li>GitHub</li>
+                    <li>Jira</li>
+                    <li>Slack</li>
+                    <li>Miro</li>
+                    <li>Notion</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-/* Header Styles */
-header {
-    background: var(--accent-color-bg);
-    color: var(--accent-color-text);
-    padding: 10px 0;
-    text-align: center;
-}
-header h1 {
-    margin: 0;
-}
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-content">
+            <h2 class="contact-title">Let's Connect</h2>
+            <p class="contact-description">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            
+            <div class="contact-methods">
+                <a href="mailto:contact@portfolio.com" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>contact@portfolio.com</p>
+                    </div>
+                </a>
+                
+                <a href="https://linkedin.com" target="_blank" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com" target="_blank" class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p>Check out my code</p>
+                    </div>
+                </a>
+                
+                <a href="https://twitter.com" target="_blank" class="contact-card">
+                    <div class="contact-icon">🐦</div>
+                    <div class="contact-info">
+                        <h3>Twitter</h3>
+                        <p>Follow my journey</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-/* Navigation Styles */
-nav {
-    margin: 20px 0;
-    font-size: 2rem;
-}
-nav, footer .social-icons {
-    user-select: none;
-    cursor: default;
-}
-nav a {
-    color: var(--accent-color-text);
-    text-decoration: none;
-    margin: 0 15px;
-}
-nav a:hover {
-    text-decoration: underline;
-}
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Portfolio. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:contact@portfolio.com">Email</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
-/* Profile Styles */
-.profile {
-    text-align: center;
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-.profile-text {
-    text-align: left;
-}
-.profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
-.tagline {
-    font-style: italic;
-    color: var(--color-tagline);
-}
-
-/* Footer Styles */
-footer {
-    background: var(--accent-color-bg);
-    color: var(--accent-color-text);
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-footer a {
-    color: var(--accent-color-text);
-    text-decoration: none;
-    margin: 0 10px;
-    user-select: all;
-}
-footer a:hover {
-    text-decoration: underline;
-}
-
-a.unstyled-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Divider Styles */
-hr {
-    border: 0;
-    height: 1px;
-    width: 20%;
-}
-hr.footer-divider {
-    background: var(--accent-color-text);
-}
-
-/* Button Styles */
-button {
-    background-color: var(--accent-color-bg);
-    color: var(--accent-color-text);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-/* Header Styles */
-header span a {
-    color: var(--accent-color-text);
-    position: relative;
-    display: inline-block;
-}
-header span a::after, header span a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, var(--accent-color-bg), var(--accent-color-text));
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s ease-out;
-}
-header span a::before {
-    top: -5px;
-    transform-origin: left;
-}
-header span a:hover {
-    text-decoration: none;
-}
-header span a:hover::after, header span a:hover::before {
-    transform: scaleX(1);
-}
-
-
-@media (max-width: 600px) {
-    /* Global Styles */
-    .container {
-        width: 95%;
-    }
-    /* Profile Styles */
-    .profile {
-        flex-direction: column;
-        text-align: center;
-    }
-    .profile-text {
-        text-align: center;
-    }
-    .profile img {
-        width: 100px;
-        height: 100px;
-    }
-}
+    <script src="../css/animations.js"></script>
+</body>
+</html>

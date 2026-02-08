@@ -3,76 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] - Projects</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/projects.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="../img/img_avatar_m.png" alt="Profile Photo" class="profile-photo">
-            <div class="profile-text">
-                <h1>[Your Name] - Projects</h1>
-                <p class="tagline">[Your Tagline Here]</p>
-            </div>
-        </div>
-        <nav>
-            <span><a href="../index.html"><i class="fas fa-home"></i> Home</a></span> | 
-            <span><a href="about.html"><i class="fas fa-user"></i> About</a></span> | 
-            <span><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></span>
-        </nav>
-    </header>
+    <div class="grain-overlay"></div>
     
-    <main>
-        <section class="projects" id="projects">
-            <article class="project">
-                <h2>Project Title 1</h2>
-                <p>Description of project 1. This project involves...</p>
-                <p class="tech-stack"><strong>Tech:</strong> [Technologies used]</p>
-                <a href="#" target="_blank"><button>View Project</button></a>
-            </article>
-            <article class="project">
-                <h2>Project Title 2</h2>
-                <p>Description of project 2. This project focuses on...</p>
-                <p class="tech-stack"><strong>Tech:</strong> [Technologies used]</p>
-                <a href="#" target="_blank"><button>View Project</button></a>
-            </article>
-            <article class="project">
-                <h2>Project Title 3</h2>
-                <p>Description of project 3. This project is about...</p>
-                <p class="tech-stack"><strong>Tech:</strong> [Technologies used]</p>
-                <a href="#" target="_blank"><button>View Project</button></a>
-            </article>
-            <article class="project">
-                <h2>Project Title 4</h2>
-                <p>Description of project 4. This project aims to...</p>
-                <p class="tech-stack"><strong>Tech:</strong> [Technologies used]</p>
-                <a href="#" target="_blank"><button>View Project</button></a>
-            </article>
-        </section>
-        <hr class="projects-divider">
-        <section class="projects-github" id="github">
-            <h2>My Projects on GitHub</h2>
-            <p>Check out my GitHub profile for more of my work. You can find additional projects and contributions there. 
-                I welcome your contributions, collaboration, and feedback. Be sure to check back again soon for updates, 
-                I'm constantly adding new projects and improving existing ones.
-            </p>
-            <button onclick="window.open('https://github.com/[yourusername]', '_blank')">Visit my GitHub Profile</button>
-        </section>
-    </main>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-initial">P</span>
+                <span class="logo-text">Portfolio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <footer>
-        <div class="contact">
-            <h3>Contact Me</h3>
-            <div class="social-icons">
-                <a class="unstyled-link" href="https://github.com/[yourusername]" target="_blank">GitHub</a> | 
-                <a class="unstyled-link" href="https://linkedin.com/in/[yourusername]" target="_blank">LinkedIn</a> | 
-                <a class="unstyled-link" href="[mailto:your.email@example.com]">[your.email@example.com]</a>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1 class="page-title">Selected Works</h1>
+            <p class="page-subtitle">A curated collection of recent projects showcasing design thinking, technical expertise, and creative problem-solving</p>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card featured">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Web Application</span>
+                    <h2 class="project-title">E-Commerce Platform Redesign</h2>
+                    <p class="project-description">Complete overhaul of a legacy e-commerce platform, focusing on user experience, conversion optimization, and modern design principles. Resulted in 45% increase in conversion rates.</p>
+                    <div class="project-tags">
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">React</span>
+                        <span class="tag">User Research</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Mobile App</span>
+                    <h2 class="project-title">Fitness Tracking App</h2>
+                    <p class="project-description">Designed and prototyped a mobile-first fitness application with gamification elements to encourage consistent user engagement.</p>
+                    <div class="project-tags">
+                        <span class="tag">Mobile</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">Gamification</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Design System</span>
+                    <h2 class="project-title">Component Library</h2>
+                    <p class="project-description">Built comprehensive design system and component library used across 12+ product teams, ensuring consistency and accelerating development.</p>
+                    <div class="project-tags">
+                        <span class="tag">Design Systems</span>
+                        <span class="tag">Documentation</span>
+                        <span class="tag">Components</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Branding</span>
+                    <h2 class="project-title">Startup Brand Identity</h2>
+                    <p class="project-description">Created complete brand identity for a tech startup, including logo design, color palette, typography, and brand guidelines.</p>
+                    <div class="project-tags">
+                        <span class="tag">Branding</span>
+                        <span class="tag">Visual Identity</span>
+                        <span class="tag">Guidelines</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Web Design</span>
+                    <h2 class="project-title">Portfolio Website</h2>
+                    <p class="project-description">Designed and developed a portfolio website for a creative professional, emphasizing visual storytelling and smooth interactions.</p>
+                    <div class="project-tags">
+                        <span class="tag">Web Design</span>
+                        <span class="tag">Animation</span>
+                        <span class="tag">Development</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="placeholder-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Dashboard</span>
+                    <h2 class="project-title">Analytics Dashboard</h2>
+                    <p class="project-description">Designed data visualization dashboard for SaaS platform, making complex metrics accessible and actionable for users.</p>
+                    <div class="project-tags">
+                        <span class="tag">Data Viz</span>
+                        <span class="tag">Dashboard</span>
+                        <span class="tag">SaaS</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Let's Work Together</h2>
+            <p class="cta-description">Have a project in mind? I'd love to hear about it.</p>
+            <a href="about.html" class="btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Portfolio. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:contact@portfolio.com">Email</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
             </div>
         </div>
-        <hr class="footer-divider">
-        <p>&copy; 20[xx] [Your Name]. All rights reserved.</p>
     </footer>
+
+    <script src="../css/animations.js"></script>
 </body>
 </html>
