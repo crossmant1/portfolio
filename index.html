@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
+    <title>Home - Thomas Crossman</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/profile_picture.JPG">
 </head>
 <body>
     <!-- Sidebar Navigation -->
@@ -18,20 +19,35 @@
         <div class="sidebar-content">
             <div class="profile-section">
                 <div class="profile-image">
-                    <img src="img/profile_picture.JPG" style="width:100%; border-radius: 40px;" alt="Avatar">
+                    <img src="img/profile_picture.JPG" style="width:100%; border-radius: 40px;"  alt="Avatar">
                 </div>
                 <h2 class="profile-name">Thomas Crossman</h2>
                 <p class="profile-title">Third Year Computer Science Student at the University of Dayton</p>
             </div>
-
             <nav class="sidebar-nav">
                 <a href="index.html" class="sidebar-link active">
                     <span>Home</span>
                 </a>
-                <a href="pages/projects.html" class="sidebar-link">
+                <a href="projects.html" class="sidebar-link">
                     <span>Projects</span>
                 </a>
             </nav>
+            <div class="sidebar-contact">
+                <a onclick="showhide()">
+                    <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white"></i>
+                    <span id="email" style="cursor: pointer;">Contact Me</span>
+                </a>
+                <br>
+                <a href="https://github.com/crossmant1" target="_blank" style="text-decoration: none;">
+                    <i class="fa fa-github w3-hover-opacity" style="font-size: 25px !important; margin-right: 20px;"></i>
+                    <span>Github</span>
+                </a>
+                <br>
+                <a href="https://www.linkedin.com/in/thomas-crossman004" target="_blank" style="text-decoration: none;">
+                    <i class="fa fa-linkedin w3-hover-opacity" style="font-size: 25px !important; margin-right: 20px;"></i>
+                    <span>Linkedin</span>
+                </a>
+            </div>
             <!--Project requriements-->
             <div id="digit-clock"></div>
                 <script>
@@ -62,22 +78,6 @@
                     }
                 </script>
             <!--End Project requirements-->
-            <div class="sidebar-contact">
-                <a onclick="showhide()">
-                    <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white"></i>
-                    <span id="email" style="cursor: pointer;">Show My Email</span>
-                </a>
-                <br>
-                <a href="https://github.com/crossmant1" target="_blank" style="text-decoration: none;">
-                    <i class="fa fa-github w3-hover-opacity" style="font-size: 25px !important; margin-right: 20px;"></i>
-                    <span>Github</span>
-                </a>
-                <br>
-                <a href="https://www.linkedin.com/in/thomas-crossman004" target="_blank" style="text-decoration: none;">
-                    <i class="fa fa-linkedin w3-hover-opacity" style="font-size: 25px !important; margin-right: 20px;"></i>
-                    <span>Linkedin</span>
-                </a>
-            </div>
         </div>
     </aside>
 
@@ -85,8 +85,10 @@
     <main class="main-content">
         <!-- About Section -->
         <section class="about-intro">
-            <h1 class="intro-title">Hello, I'm a Developer</h1>
-            <p class="intro-text">I'm a passionate full-stack developer with expertise in building modern web applications. With over 8 years of experience, I specialize in creating scalable, user-friendly solutions using the latest technologies. I love solving complex problems and turning ideas into reality through clean, efficient code.</p>
+            <h1 class="intro-title">About Me</h1>
+            <p class="intro-text">
+                I am working towards a Bachelors of Science in Computer Science with a minor in AI and Data Science, a concentration in Software Enginnering, and a certificate in Cyber Defense. I 
+            </p>
         </section>
 
         <!-- Work Experience Section -->
@@ -167,11 +169,6 @@
                             <li>Set up tents and inflatables on location</li>
                             <li>Staged and loaded box trucks</li>
                         </ul>
-                        <div class="experience-tags">
-                            <span class="tag">Brand Design</span>
-                            <span class="tag">Marketing</span>
-                            <span class="tag">Client Relations</span>
-                        </div>
                     </div>
                 </article>
 
@@ -183,22 +180,16 @@
                     <div class="experience-content">
                         <div class="experience-header">
                             <div class="experience-title-group">
-                                <h3 class="experience-title">Design Intern</h3>
-                                <p class="experience-company">Startup Ventures</p>
+                                <h3 class="experience-title">Front Counter Team Member</h3>
+                                <p class="experience-company">Burger King</p>
                             </div>
-                            <span class="experience-date">2017 - 2018</span>
+                            <span class="experience-date">Summers of 2020, 2021, 2023</span>
                         </div>
                         <ul class="experience-description">
-                            <li>Assisted in wireframing and mockup creation for web applications</li>
-                            <li>Conducted competitive analysis and market research</li>
-                            <li>Contributed to the development of the company's visual identity</li>
-                            <li>Learned industry-standard design tools and methodologies</li>
+                            <li>Handled hundreds of dollars total in transactions</li>
+                            <li>Trained ~3 new workers </li>
+                            <li>Developed interpersonal skills by interacting with customers to take orders and operate register</li>
                         </ul>
-                        <div class="experience-tags">
-                            <span class="tag">Wireframing</span>
-                            <span class="tag">Research</span>
-                            <span class="tag">Visual Design</span>
-                        </div>
                     </div>
                 </article>
             </div>

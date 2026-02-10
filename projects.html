@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Thomas Crossman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/profile_picture.JPG">
+
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="img/profile_picture.JPG" style="width:100%; border-radius: 40px;" alt="Avatar">
+                </div>
+                <h2 class="profile-name">Thomas Crossman</h2>
+                <p class="profile-title">Third Year Computer Science Student at the University of Dayton</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-link active">
+                    <span>Home</span>
+                </a>
+                <a href="projects.html" class="sidebar-link">
+                    <span>Projects</span>
+                </a>
+            </nav>
+            <div class="sidebar-contact">
+                <a onclick="showhide()">
+                    <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white"></i>
+                    <span id="email" style="cursor: pointer;">Contact Me</span>
+                </a>
+                <br>
+                <a href="https://github.com/crossmant1" target="_blank" style="text-decoration: none;">
+                    <i class="fa fa-github w3-hover-opacity" style="font-size: 25px !important; margin-right: 20px;"></i>
+                    <span>Github</span>
+                </a>
+                <br>
+                <a href="https://www.linkedin.com/in/thomas-crossman004" target="_blank" style="text-decoration: none;">
+                    <i class="fa fa-linkedin w3-hover-opacity" style="font-size: 25px !important; margin-right: 20px;"></i>
+                    <span>Linkedin</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1 class="page-title">My Projects</h1>
+            <p class="page-subtitle"></p>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-section">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);">
+                            <img src="img/php_logo.png" style="width:100%;" alt="php_logo">
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/crossmant1/Minifacebook" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Application</span>
+                        <h2 class="project-title">Minifacebook</h2>
+                        <p class="project-description">Implementation of a social media web app that allows users to create accounts, posts, comment and more. It is protected from Cross site scripting, Cross-site Request Foragery, SQL Injection, and Session Hijacking attacks.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #F7DF1E 0%, #F7DF1E 100%); display: flex; justify-content: flex-end;">
+                            <img src="img/javascript_logo.png" style="width:63%;" alt="javascript_logo">
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/crossmant1/Multi-Threaded-Chat-Client-With-Server" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Application</span>
+                        <h2 class="project-title">Multi Threaded Chat Client with Server</h2>
+                        <p class="project-description">Server and client implementation that is asynchronous and non-blocking. It can handle multiple connected clients and inter-client communicaiton</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Go</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%); display: flex; justify-content: center;">
+                            <img src="img/python_logo.png" style="width:63%;" alt="python_logo">
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/crossmant1/Google-Workspace-MCP" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">MCP Server</span>
+                        <h2 class="project-title">Google Workspace MCP Server</h2>
+                        <p class="project-description">MCP server that uses tools to connect an AI agent to the Google Workspace, enabling users to interact with a plethora of Google features, including Drive, Gmail, Docs, Sheets, Tasks, and Calender straight from the Agent.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%); display: flex; justify-content: center;">
+                            <img src="img/python_logo.png" style="width:63%;" alt="python_logo">
+                        </div>                      
+                        <div class="project-overlay">
+                            <a href="https://github.com/acm-udayton/ACM-Meeting-Records" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Application</span>
+                        <h2 class="project-title">ACM Meeting Records</h2>
+                        <p class="project-description">Meeting records handlier for the University of Dayton's Official Student Chapter of the Associasion for Computing Machinery.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%); display: flex; justify-content: center;">
+                            <img src="img/c_plus_plus_logo.png" style="width:63%;" alt="python_logo">
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/crossmant1/Image-Blurring" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Application</span>
+                        <h2 class="project-title">Image Blurring</h2>
+                        <p class="project-description">Allows a user to blur slected regions of an uploaded image with an easy to use interface and hotkeys.</p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%); display: flex; justify-content: center;">
+                            <img src="img/python_logo.png" style="width:63%;" alt="python_logo">
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/crossmant1/K-Means-Image-Compression" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Application</span>
+                        <h2 class="project-title">K means Image Compression</h2>
+                        <p class="project-description">Implements the K means algorithm to compress an image.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="css/animations.js"></script>
+</body>
+</html>
